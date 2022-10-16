@@ -23,7 +23,7 @@ function App() {
     },
     {
       nome: "Grupo 5",
-      corPrimaria: "#991b1b",
+      corPrimaria: "#fcd34d",
     },
   ];
 
@@ -37,13 +37,14 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario aoJogadorCadastrado={(jogador) => aoNovoJogador(jogador)} />
+      <Formulario grupos={grupos.map(grupo => grupo.nome)} aoJogadorCadastrado={(jogador) => aoNovoJogador(jogador)} />
 
       {grupos.map((grupo) => (
         <Grupo
           key={grupo.nome}
           nome={grupo.nome}
           corPrimaria={grupo.corPrimaria}
+          jogadores={jogadores.filter(jogador => jogador.grupo === grupo.nome)}
         />
       ))}
     </div>

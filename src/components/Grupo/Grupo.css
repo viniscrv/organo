@@ -1,7 +1,7 @@
 .grupo {
     text-align: center;
     padding: 32px;
-    background-color: #171717; 
+    background-color: #181A1B; 
 }
 
 .grupo h3 {
@@ -9,4 +9,11 @@
     border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
+}
+
+.grupo .jogadores {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
 }

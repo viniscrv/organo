@@ -6,12 +6,11 @@ import "./Formulario.css";
 
 const Formulario = (props) => {
   
-  const grupos = ["grupo 1", "grupo 2", "grupo 3", "grupo 4", "grupo 5"];
-
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [grupo, setGrupo] = useState("");
+
 
   const aoSalvar = (event) => {
     event.preventDefault();
@@ -21,6 +20,9 @@ const Formulario = (props) => {
       imagem,
       grupo,
     })
+    setNome('')
+    setCargo('')
+    setImagem('')
   };
 
   return (
@@ -44,16 +46,16 @@ const Formulario = (props) => {
         <CampoTexto
           label="Imagem"
           placeholder="Informe o endereço da imagem"
-          volor={imagem}
+          valor={imagem}
           aoAlterado={(valor) => setImagem(valor)}
         />
         <ListaSuspensa
           label="Time"
-          itens={grupos}
+          itens={props.grupos}
           valor={grupo}
           aoAlterado={(valor) => setGrupo(valor)}
         />
-        <Botao>Click me</Botao>
+        <Botao>Criar card</Botao>
       </form>
     </section>
   );
