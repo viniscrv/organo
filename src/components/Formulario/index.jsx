@@ -15,7 +15,7 @@ const Formulario = (props) => {
 
   const aoSalvar = (event) => {
     event.preventDefault();
-    props.aoColaboradorCadastrado({
+    props.aoJogadorCadastrado({
       nome,
       cargo,
       imagem,
@@ -26,7 +26,7 @@ const Formulario = (props) => {
   return (
     <section className="formulario">
       <form onSubmit={aoSalvar}>
-        <h2>Preencha os dados para criar o card do colaborador</h2>
+        <h2>Preencha os dados para criar o card do jogador</h2>
         <CampoTexto
           obrigario={true}
           label="Nome"
