@@ -14,6 +14,7 @@ const Grupo = (props) => {
               nome={jogador.nome}
               cargo={jogador.cargo}
               imagem={jogador.imagem}
+              corFundo={props.corPrimaria}
             />
           ))}
         </div>

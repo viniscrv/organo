@@ -1,10 +1,10 @@
 import React from 'react'
 import './Jogador.css'
 
-const Jogador = ({imagem, nome, cargo}) => {
+const Jogador = ({imagem, nome, cargo, corFundo}) => {
   return (
     <div className='jogador'>
-        <div className='cabecalho'>
+        <div className='cabecalho' style={{backgroundColor: corFundo}}>
             <img src={imagem} alt={nome} />
         </div>
         <div className='rodape'>

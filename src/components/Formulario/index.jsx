@@ -23,6 +23,7 @@ const Formulario = (props) => {
     setNome('')
     setCargo('')
     setImagem('')
+    setGrupo('')
   };
 
   return (
