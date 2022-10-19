@@ -7,7 +7,7 @@ import "./Formulario.css";
 const Formulario = (props) => {
   
   const [nome, setNome] = useState("");
-  const [cargo, setCargo] = useState("");
+  const [funcao, setFuncao] = useState("");
   const [imagem, setImagem] = useState("");
   const [grupo, setGrupo] = useState("");
 
@@ -16,12 +16,12 @@ const Formulario = (props) => {
     event.preventDefault();
     props.aoJogadorCadastrado({
       nome,
-      cargo,
+      funcao,
       imagem,
       grupo,
     })
     setNome('')
-    setCargo('')
+    setFuncao('')
     setImagem('')
     setGrupo('')
   };
@@ -39,10 +39,10 @@ const Formulario = (props) => {
         />
         <CampoTexto
           obrigario={true}
-          label="Cargo"
-          placeholder="Digite seu cargo"
-          valor={cargo}
-          aoAlterado={(valor) => setCargo(valor)}
+          label="Função"
+          placeholder="Digite sua função"
+          valor={funcao}
+          aoAlterado={(valor) => setFuncao(valor)}
         />
         <CampoTexto
           label="Imagem"

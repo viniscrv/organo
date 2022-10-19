@@ -1,6 +1,7 @@
 .jogador {
     width: 280px;
     box-shadow: 8px 8px 16px rgba(0,0,0,0.8);
+    margin-bottom: 1.6em;
 }
 
 .jogador .cabecalho {

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Grupo from "./components/Grupo";
 
@@ -35,7 +34,6 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
       <Formulario grupos={grupos.map(grupo => grupo.nome)} aoJogadorCadastrado={(jogador) => aoNovoJogador(jogador)} />
 
       {grupos.map((grupo) => (

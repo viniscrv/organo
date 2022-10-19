@@ -12,7 +12,7 @@ const Grupo = (props) => {
             <Jogador
               key={jogador.nome}
               nome={jogador.nome}
-              cargo={jogador.cargo}
+              funcao={jogador.funcao}
               imagem={jogador.imagem}
               corFundo={props.corPrimaria}
             />
