@@ -9,7 +9,7 @@ const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [funcao, setFuncao] = useState("");
   const [imagem, setImagem] = useState("");
-  const [grupo, setGrupo] = useState("");
+  const [grupo, setGrupo] = useState("Grupo 1");
 
 
   const aoSalvar = (event) => {
@@ -23,7 +23,7 @@ const Formulario = (props) => {
     setNome('')
     setFuncao('')
     setImagem('')
-    setGrupo('')
+    setGrupo('Grupo 1')
   };
 
   return (
